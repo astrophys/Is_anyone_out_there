@@ -1,0 +1,167 @@
+\documentclass{beamer}
+%\usetheme{Ilmenau}
+\usetheme{Copenhagen}
+%\usecolortheme{seahorse}
+% See http://www.hartwork.org/beamer-theme-matrix/ for more themes and colors
+
+% for themes, etc.
+%\mode<presentation>{ \usetheme{boxes} }
+%\mode<presentation>{ \usetheme{Warsaw} }
+%\renewcommand*{\bibfont}{\scriptsize}
+
+\usepackage{times}  % fonts are up to you
+\usepackage{graphics}
+\usepackage{amsmath}
+\usepackage{media9}
+\usepackage{hyperref}
+
+\usepackage{tikz}
+\usetikzlibrary{fit}
+
+%\usepackage[absolute,overlay]{textpos}
+%\usepackage{psfrag}
+
+
+%Bibliography stuff
+%\usepackage[style=authoryear]{biblatex}
+\bibliography{/Users/ali/Library/texmf/bibtex/bib/references}
+%\bibliographystyle{apj}
+
+\setbeamertemplate{bibliography item}[text]
+%\usepackage[backend=bibtex, style=authoryear]{biblatex}
+%\addbibresource{/Users/ali/Library/texmf/bibtex/bib/references.bib}
+\newcommand{\customcite}[1]{\citeauthor{#1}, \citeyear{#1}}
+
+
+\newcommand\smallFont{\fontsize{8}{7.2}\selectfont}   %Change font size.
+\newcommand\mCite[1]{[\cite{#1}, \citetitle{#1}]}  %Prints name and title
+\newcommand\FrameText[1]{
+\begin{textblock*}{\paperwidth}(0pt,\textheight)
+    \vspace{1.0cm}
+    \raggedleft \smallFont #1
+\end{textblock*}}
+
+%Get rid of ugly copenhagen default symbol for enumerate
+\setbeamertemplate{enumerate items}[default]   
+
+%Increase default separation size between items in itemize and enumerate 
+
+\tikzset{type1/.style={rectangle, rounded corners, minimum width=3cm, minimum height=0.1cm,text centered, draw=black, fill=blue!10, text width=2cm},
+        type2/.style={rectangle, rounded corners, minimum width=3cm, minimum height=0.1cm, text centered, draw=black, fill=blue!10, text width=5cm},
+        info/.style = {rectangle, rounded corners, minimum width=2.5cm, minimum height=0.1cm, text centered, draw=black, 
+            fill=blue!30, text width=2.5cm},
+        org/.style={rectangle, rounded corners, minimum width=2cm, minimum height=0.1cm, text centered, draw=black, 
+            fill=blue!30, text width=3cm},
+        decision/.style = {square, minimum width=1cm, minimum height=0.1cm, text centered, 
+            draw=black, fill=green!30, text width=4cm},
+        arrow/.style = {thick,->,>=stealth},
+    }
+    
+    
+    
+   
+
+%%%%%%%%%%%%%%% BIBLIOGRAPHY COMMANDS %%%%%%%%%%%%%%%
+\newcommand{\apj}{ApJ.}
+\newcommand{\apjs}{ApJS}
+\newcommand{\apjl}{ApJL}
+\newcommand{\pasp}{Publications of the Astronomical Society of the Pacific}
+\newcommand{\pasj}{Publ. of the Astron. Soc. of Japan}
+\newcommand{\prc}{Phys. Rev. C}
+\newcommand{\prd}{Phys. Rev. D}
+\newcommand{\nat}{Nature}
+\newcommand{\mnras}{Mon. Not. R. Astron. Soc.}
+\newcommand{\na}{New Astronomy}
+\newcommand{\aap}{Astronomy and Astrophysics}
+\newcommand{\araa}{Annu. Rev. Astron. Astrophys}
+\newcommand{\aj}{Astronomical Journal}
+\newcommand{\pasa}{Pub. of the Astron. Soc. of Australia}
+\newcommand{\nar}{New Astronomy Reviews}
+
+
+%%%%%%%%%%%%%%% OTHER COMMANDS %%%%%%%%%%%%%%%%%
+\newcommand{\subitem}{\item[$-$]}
+
+
+% these will be used later in the title page
+\title{Is anyone out there?}
+\author{Ali Snedden
+}
+\date{February 10, 2022}
+%\subtitle{stuff}
+
+% note: do NOT include a \maketitle line; also note that this title
+% material goes BEFORE the \begin{document}
+
+% Recurring Outline
+\AtBeginSection[]  % "Beamer, do the following at the start of every section"
+{
+\begin{frame}<beamer> 
+\frametitle{Outline} % make a frame titled "Outline"
+\tableofcontents[currentsection]  % show TOC and highlight current section
+\end{frame}
+}
+
+\begin{document}
+
+% this prints title, author etc. info from above
+\begin{frame}
+\titlepage
+\end{frame}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%   Introduction to Cosmology %%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{In the Beginning...}
+%Gas Phase
+\begin{frame}
+\frametitle{Antiquity}
+%\begin{picture}(320,250) 
+%    \put(-10, 145){\includegraphics[height=1.25in]{/Users/asnedden/Documents/Professional/Talks/Nerd_hour_01_22_16/images/armenian_cave.eps}}
+%    \put(25, 240){\begin{minipage}[t]{0.3 \linewidth}
+%    {\scriptsize{Armenian Cave 4000BC}}
+%    \end{minipage}}
+\end{frame}
+
+\section{Methods}
+\begin{frame}
+\frametitle{Antiquity}
+\begin{picture}(320,250) 
+    \put(-10, 145){\includegraphics[height=1.25in]{/Users/asnedden/Documents/Professional/Talks/Nerd_hour_01_22_16/images/armenian_cave.eps}}
+    \put(25, 240){\begin{minipage}[t]{0.3 \linewidth}
+    {\scriptsize{Armenian Cave 4000BC}}
+    \end{minipage}}
+\end{frame}
+
+\section{Experiments}
+
+\section{Signatures of Life}
+
+\section{Why earth isn't so special}
+
+\section{Intelligent Life}
+
+
+\section{Citations}
+\begin{frame}
+\begin{itemize}
+\item \scriptsize{http://news.nationalgeographic.com/news/2011/01/110111-oldest-wine-press-making-winery-armenia-science-ucla/}
+\item \scriptsize{Inventing Wine : A New History Of One Of The World's Most Ancient Pleasures}
+\item \scriptsize{http://www.npr.org/books/titles/166184038/inventing-wine-a-new-history-of-one-of-the-worlds-most-ancient-pleasures\#excerpt}
+\item \scriptsize{http://www.ratebeer.com/Story.asp?StoryID=216}
+\item \scriptsize{http://www.history.org/foundation/journal/holiday07/drink.cfm}
+\item \scriptsize{http://www.earlyamerica.com/early-america-review/volume-6/alcohol-in-the-american-colonies/}
+\item \scriptsize{http://classics.mit.edu/Homer/odyssey.mb.txt}
+\item \scriptsize{http://wineamerica.org/policy/by-the-numbers}
+\item \scriptsize{https://www.brewersassociation.org/statistics/national-beer-sales-production-data/}
+\end{itemize}
+\end{frame}
+
+
+
+
+\end{document}
