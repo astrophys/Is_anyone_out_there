@@ -1,13 +1,19 @@
+% Author : Ali Snedden
+% Date   : 10-feb-2022
+% Purpose: 
+%   This is my nerd hour presentation for the Batelle Center for Mathematical Medicine
+
+
+
+
+
+
+
+
 \documentclass{beamer}
-%\usetheme{Ilmenau}
 \usetheme{Copenhagen}
 %\usecolortheme{seahorse}
 % See http://www.hartwork.org/beamer-theme-matrix/ for more themes and colors
-
-% for themes, etc.
-%\mode<presentation>{ \usetheme{boxes} }
-%\mode<presentation>{ \usetheme{Warsaw} }
-%\renewcommand*{\bibfont}{\scriptsize}
 
 \usepackage{times}  % fonts are up to you
 \usepackage{graphics}
@@ -18,10 +24,6 @@
 \usepackage{tikz}
 \usetikzlibrary{fit}
 
-%\usepackage[absolute,overlay]{textpos}
-%\usepackage{psfrag}
-
-
 %Bibliography stuff
 %\usepackage[style=authoryear]{biblatex}
 \bibliography{/Users/ali/Library/texmf/bibtex/bib/references}
@@ -31,6 +33,8 @@
 %\usepackage[backend=bibtex, style=authoryear]{biblatex}
 %\addbibresource{/Users/ali/Library/texmf/bibtex/bib/references.bib}
 \newcommand{\customcite}[1]{\citeauthor{#1}, \citeyear{#1}}
+% https://tex.stackexchange.com/a/61016/84495
+\newcommand{\chref}[3][blue]{\href{#2}{\color{#1}{#3}}}%
 
 
 \newcommand\smallFont{\fontsize{8}{7.2}\selectfont}   %Change font size.
@@ -45,7 +49,6 @@
 \setbeamertemplate{enumerate items}[default]   
 
 %Increase default separation size between items in itemize and enumerate 
-
 \tikzset{type1/.style={rectangle, rounded corners, minimum width=3cm, minimum height=0.1cm,text centered, draw=black, fill=blue!10, text width=2cm},
         type2/.style={rectangle, rounded corners, minimum width=3cm, minimum height=0.1cm, text centered, draw=black, fill=blue!10, text width=5cm},
         info/.style = {rectangle, rounded corners, minimum width=2.5cm, minimum height=0.1cm, text centered, draw=black, 
@@ -82,7 +85,6 @@
 %%%%%%%%%%%%%%% OTHER COMMANDS %%%%%%%%%%%%%%%%%
 \newcommand{\subitem}{\item[$-$]}
 
-
 % these will be used later in the title page
 \title{Is anyone out there?}
 \author{Ali Snedden
@@ -113,13 +115,36 @@
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%   Introduction to Cosmology %%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Histor - Antiquity (or pre-$20^{th}$ century)
-%Gas Phase
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% History : Pre-Modern %%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{History : Pre-Modern (pre-$20^{th}$ century)}
+%%% % TO DO Cite tippler here, add pictures
 \begin{frame}
-\frametitle{Antiquity }
+\frametitle{Antiquity}
+\begin{itemize}
+    \item ``Believers" in life on other planets
+        \begin{enumerate}
+            \item Democritus (atomic theory of the universe, geometry)
+            \pause
+            \item Metrodorus of Chios 
+                \begin{itemize}
+                    \item[--] ``It seems absurd, that in a large field only one stalk
+                                should grow, and that in an infinite space only one world
+                                exist."
+                \end{itemize}
+            \pause
+            \item Plutarch (historian)
+        \end{enumerate}
+    \item ``Non-believers" in life on other planets
+        \begin{enumerate}
+            \item Plato (philosopher)
+            \item Aristotle (philosopher)
+                \begin{itemize}
+                    \item[--] Universe of Aristotle is finite, with only one inhabited planet
+                \end{itemize}
+        \end{enumerate}
+\end{itemize}
 %\begin{picture}(320,250) 
 %    \put(-10, 145){\includegraphics[height=1.25in]{/Users/asnedden/Documents/Professional/Talks/Nerd_hour_01_22_16/images/armenian_cave.eps}}
 %    \put(25, 240){\begin{minipage}[t]{0.3 \linewidth}
@@ -127,32 +152,55 @@
 %    \end{minipage}}
 \end{frame}
 
-%\section{Methods}
-%\begin{frame}
-%\frametitle{Antiquity}
-%\begin{picture}(320,250) 
-%    \put(-10, 145){\includegraphics[height=1.25in]{/Users/asnedden/Documents/Professional/Talks/Nerd_hour_01_22_16/images/armenian_cave.eps}}
-%    \put(25, 240){\begin{minipage}[t]{0.3 \linewidth}
-%    {\scriptsize{Armenian Cave 4000BC}}
-%    \end{minipage}}
-%\end{frame}
-
-%\section{Experiments}
-%
-%\section{Signatures of Life}
-%
-%\section{Why earth isn't so special}
-%
-%\section{Intelligent Life}
-%
-% Unsolved mysteries, x-files
-% Drake eqn
-% Fermi paradox
-% Compute energy required to travel to alpha centari.
-% Government interest, 
-% Omumguma
 
 \begin{frame}
+\frametitle{Christian Era}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Renaissance }
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Enlightenment}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Modern Era}
+\end{frame}
+
+%%%  
+%%%  
+%%%  %\section{Methods}
+%%%  %\begin{frame}
+%%%  %\frametitle{Antiquity}
+%%%  %\begin{picture}(320,250) 
+%%%  %    \put(-10, 145){\includegraphics[height=1.25in]{/Users/asnedden/Documents/Professional/Talks/Nerd_hour_01_22_16/images/armenian_cave.eps}}
+%%%  %    \put(25, 240){\begin{minipage}[t]{0.3 \linewidth}
+%%%  %    {\scriptsize{Armenian Cave 4000BC}}
+%%%  %    \end{minipage}}
+%%%  %\end{frame}
+%%%  
+%%%  %\section{Experiments}
+%%%  %
+%%%  %\section{Signatures of Life}
+%%%  %
+%%%  %\section{Why earth isn't so special}
+%%%  %
+%%%  %\section{Intelligent Life}
+%%%  %
+%%%  % Unsolved mysteries, x-files
+%%%  % Drake eqn
+%%%  % Fermi paradox
+%%%  % Compute energy required to travel to alpha centari.
+%%%  % Government interest, 
+%%%  % Omumguma
+%%%  
+\begin{frame}
+\frametitle{Modern Era}
 "There can be little doubt that civilizations more advanced than the earth's
  exist elsewhere in the universe. The probabilities involved in locating one of them
  call for a substantial effort." - Carl Sagan and Frank Drake
@@ -161,12 +209,26 @@
 \section{Citations}
 \begin{frame}
 \begin{itemize}
-\item \scriptsize{https://www.scientificamerican.com/article/the-search-for-extraterre/}
-\item \scriptsize{https://adsabs.harvard.edu/full/1981QJRAS..22..133T}
+    \item \scriptsize{https://www.scientificamerican.com/article/the-search-for-extraterre/}
+    \item \scriptsize{https://adsabs.harvard.edu/full/1981QJRAS..22..133T}
+    \item \scriptsize{https://science.thewire.in/the-sciences/for-how-long-has-humankind-contemplated-aliens/}
 \end{itemize}
 \end{frame}
 
-
-
-
+\begin{frame}
+\frametitle{Images}
+\begin{itemize}
+    \item \chref{https://en.wikipedia.org/wiki/Plato\#/media/File:Plato\_Silanion\_Musei\_Capitolini\_MC1377.jpg}{Plato - Public Domain}
+    \item \chref{https://en.wikipedia.org/wiki/Aristotle\#/media/File:Aristotle\_Altemps\_Inv8575.jpg}{Aristotle - Public Domain}
+    \item \chref{https://en.wikipedia.org/wiki/Democritus\#/media/File:Democritus2.jpg}{Democritus - Public Domain}
+    \item \chref{https://commons.wikimedia.org/wiki/File:Plutarch\_of\_Chaeronea-03\_(cropped).jpg}{Plutarch - CC BY-SA 4.0}
+    \item \chref{https://www.imdb.com/title/tt0094574/mediaviewer/rm765168385}{Unsolved Mysteries - Fair Use}
+    \item \chref{https://www.imdb.com/title/tt0083866/mediaviewer/rm1993282560/}{ET - Fair Use}
+    \item \chref{https://www.amazon.com/Lost-Book-Enki-Prophecies-Extraterrestrial-ebook/dp/B004P1JEUW}{The Lost Book of Enky - Fair Use}
+    \item \chref{https://newrepublic.com/article/126715/x-files-i-want-believe-posters-origin-story}{The X-Files - Fair Use}
+\end{itemize}
+\end{frame}
+%%%  
+%%%  
+%%%  
 \end{document}
