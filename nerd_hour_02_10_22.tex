@@ -493,6 +493,8 @@
             \item Disadvantage : Really hard to do
             \pause
             \item 58 planets
+            \pause
+            \item Show HR\_8799\_Orbiting\_Exoplanets.gif
         \end{itemize}
 \end{enumerate}
 }
@@ -524,8 +526,8 @@
 \begin{frame}
 \frametitle{Experiments - Kepler}
 \begin{picture}(320,250) 
-\put(200, 150){\includegraphics[height=0.75in]{images/kst-PD.png}}
-\put(-20, 250){\begin{minipage}[t]{0.6 \linewidth}
+\visible<1->{\put(200, 100){\includegraphics[height=1.5in]{images/kst-PD.png}}}
+\put(-20, 230){\begin{minipage}[t]{0.7 \linewidth}
 {Kepler Space Telescope (2009-2018)
 % Mention irony
 \begin{itemize}
@@ -533,13 +535,9 @@
     \pause 
     \item Orbits Sun, NOT earth
     \pause 
-    \item Continually monitored 530,000 stars
-    \pause 
-    \item Observed in constellations Cygnus, Lyra and Draco
+    \item Continually monitored 530,000 stars in Cygnus, Lyra and Draco
     \pause 
     \item Used Transit method
-    \pause 
-    \item Only detected systems with planets edge on.
     \pause 
     \item Detected 2662 planets
     \pause 
@@ -555,19 +553,17 @@
 \begin{frame}
 \frametitle{Experiments - TESS}
 \begin{picture}(320,250) 
-\put(200, 150){\includegraphics[height=0.75in]{images/TESS-PD.jpg}}
-\put(-20, 250){\begin{minipage}[t]{0.6 \linewidth}
+\visible<1->{\put(200, 100){\includegraphics[height=1.2in]{images/TESS-PD.jpg}}}
+\put(-20, 240){\begin{minipage}[t]{0.7 \linewidth}
 {Transiting Exoplanet Survey Satellite (2018-current)
 \begin{itemize}
     \item 4 camera's with 4" diameter lense, Field of view = 2300 $\text{deg}^{2}$
     \pause 
-    \item Observes 85\% of the sky
+    \item Observes 85\% of the sky. Survey 200,000 brightest stars
     \pause 
     \item Provides targets for detailed spectroscopy for James Webb Space Telescope
     \pause 
     \item Primary mission is to survey brightest stars near Earth
-    \pause 
-    \item Survey 200,000 brightest stars
     \pause 
     \item Used Transit method
     \pause 
@@ -581,8 +577,8 @@
 \begin{frame}
 \frametitle{Experiments - JWST}
 \begin{picture}(320,250) 
-\put(200, 150){\includegraphics[height=0.75in]{images/JWST-PD.png}}
-\put(-20, 250){\begin{minipage}[t]{0.6 \linewidth}
+\visible<1->{\put(200, 100){\includegraphics[height=1.5in]{images/JWST-PD.png}}}
+\put(-20, 230){\begin{minipage}[t]{0.6 \linewidth}
 {James Web Space Telescope (2022-current)
 \begin{itemize}
     \item Infrared telescope with 6.5m mirror, Field of view = 0.0025 $\text{deg}^{2}$
@@ -605,13 +601,13 @@
 \begin{frame}
 \frametitle{Experiments - Square Kilometer Array}
 \begin{picture}(320,250) 
-\put(200, 150){\includegraphics[height=0.75in]{images/ska-cc-by-3.jpg}}
-\put(-20, 250){\begin{minipage}[t]{0.6 \linewidth}
+\visible<1->{\put(200, 100){\includegraphics[height=1.25in]{images/ska-cc-by-3.jpg}}}
+\put(-20, 240){\begin{minipage}[t]{0.7 \linewidth}
 {Square Kilometer Array (Future)
 \begin{itemize}
     \item Radio telescope with 1$\text{km}^{2}$ effective collecting area
     \pause 
-    \item Made of several thousand 12m radio dishes
+    \item Made of thousands 12m radio dishes
     \pause
     \item Located in South Africa
     \pause 
@@ -622,7 +618,7 @@
         \item Includes 10,000 stars
     \end{enumerate}
     \pause 
-    \item Could detect extraterrestrial planetary radar from thousands of light years away
+    \item Detect extraterrestrial planetary radar from thousands of light years away
     \begin{enumerate}
         \item Includes millions of stars
     \end{enumerate}
@@ -668,7 +664,7 @@ Animal life (intelligent life) :
     \pause
     \item Air pollution / smog
     \pause
-    \item Radio transmission
+    \item Radio emission
     % Mention SKA
 \end{itemize}
 \end{frame}
@@ -695,7 +691,13 @@ $$ N = R_{*} \cdot f_{p} \cdot n_{e} \cdot f_{L} \cdot f_{i} \cdot f_{c} \cdot L
     \item $f_{c}$ : Fraction of civilizations that develop technology that produces signal
     \item $L$     : Life span of technologically advanced civilizations
 \end{itemize}
-\pause
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Drake Equation}
+% https://www.seti.org/drake-equation-index
+$$ N = R_{*} \cdot f_{p} \cdot n_{e} \cdot f_{L} \cdot f_{i} \cdot f_{c} \cdot L$$
 Selecting reasonable values (for Milky Way): 
 \begin{itemize}
     \item $N$ : unknown
@@ -707,8 +709,10 @@ Selecting reasonable values (for Milky Way):
     \item $f_{c} = \text{unknown}$ 
     \item $L     = \text{unknown}$ 
 \end{itemize}
-$$ N = \cdot f_{L} \cdot f_{i} \cdot f_{c} \cdot L$$
+\pause
+$$ N = 1.0 \cdot f_{L} \cdot f_{i} \cdot f_{c} \cdot L$$
 \end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%% Ain't so special %%%%%%%%%%%%%%%%%%
@@ -716,27 +720,27 @@ $$ N = \cdot f_{L} \cdot f_{i} \cdot f_{c} \cdot L$$
 \section{Earth isn't so special}
 \begin{frame}
 \frametitle{Our Solar System}
+Our Solar System : 
 \begin{itemize}
-    \item Our star is a run of the mill Main Sequence star
+    \item Our star is a run-of-the mill Main Sequence star
     \pause
-    \item Star will last about 10billion years
+    \item Sun will last about 10billion years
     \pause
-    \item Chemical composition is very similar to many stars in galaxy
+    \item Chemical composition is similar to many stars 
     \pause
     \begin{enumerate}
-        \item Planets form from the same dust / molecular cloud as the star. 
+        \item Planets form from same dust / molecular cloud as star
     \end{enumerate}
-    \item Chemical composition is very similar to many stars in galaxy
-    \pause
     \item ``Cosmological Principle"
     \begin{enumerate}
         \item ``At large enough scale, the univeres appears homogeneous in all directions"
         \pause 
-        \item Rephrased : ``We don't live is a special place (e.g. star, planet, location)" 
+        \item Interpret as : ``We don't live is a special place (e.g. star, planet, location)" 
         \pause
         \item Doesn't quite apply here, but the style of thinking does
         \pause
         \item Extrapolated : There is nothing special about where we are. If life occurs somewhere, it likely occurs everywhere
+        \pause
         \begin{itemize}
             \item[--] Throughout astronomy's history we've seen that if we think something can occur (e.g. black holes, white dwarfs, etc.), it frequently does.
         \end{itemize}
@@ -744,18 +748,18 @@ $$ N = \cdot f_{L} \cdot f_{i} \cdot f_{c} \cdot L$$
 \end{itemize}
 \end{frame}
 
-\begin{frame}
-\frametitle{Mass-Orbit Relation (2018)}
-\begin{picture}(320,250) 
-\put(200, 150){\includegraphics[height=0.75in]{images/mass-orbit-PD.png}}
-\end{picture}
-\end{frame}
+%\begin{frame}
+%\frametitle{Mass-Orbit Relation (2018)}
+%\begin{picture}(320,250) 
+%\put(10, 100){\includegraphics[width=3.75in]{images/mass-orbit-PD.png}}
+%\end{picture}
+%\end{frame}
 
 \begin{frame}
 \frametitle{Statistics}
 \begin{picture}(320,250) 
-\put(200, 150){\includegraphics[height=0.75in]{images/exoplanet-size.jpg}}
-\put(-20, 250){\begin{minipage}[t]{0.6 \linewidth}
+\put(160, 60){\includegraphics[height=1.6in]{images/exoplanet-size.jpg}}
+\put(-20, 240){\begin{minipage}[t]{0.6 \linewidth}
 {Stars
 \begin{itemize}
     \item 100's billions of stars

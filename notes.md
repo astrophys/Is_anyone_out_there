@@ -35,7 +35,7 @@
                 + Third letter on sunspots
                     - "as false and damnable the view of those who would put inhabitants on 
                        Jupiter, Venus, Saturn and the Moon, meaning by 'inhabitants' animals
-                       like ours and min in particular
+                       like ours and men in particular
             * Kepler 
                 + Believed in life on other planets, but inferior to humans
                 + Planets around other stars - unsolved.
